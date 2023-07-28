@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "about-streamlit-multi-page"
+version = "0.0.0"
+description = "test streamlit multi page feature"
+authors = ["AlexandreGazagnes"]
+license = "GNU GPLv3"
+readme = "README.md"
+packages = [{include = "about_streamlit_multi_page"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.25.0"
+pandas = "^2.0.3"
+pytest = "^7.4.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+black = "^23.7.0"
+pytest = "^7.4.0"
+flake8 = "^6.0.0"
+coverage = "^7.2.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
